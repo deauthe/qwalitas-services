@@ -8,20 +8,20 @@ import Footer from "./components/Footer";
 
 function App() {
 	return (
-		<div className="flex-col min-h-screen bg-black ">
+		<div className="flex-col min-h-screen bg-zinc-900 overflow-hidden ">
 			<NavBar />
-			<hr className="mx-9 bg-primary rounded-3xl  "></hr>
+			<hr className="mx-9 border-zinc-900 "></hr>
 			<div className=" bg-black min-h-screen p-8 ">
 				<div className="my-9">
 					<Hero />
 				</div>
-				<hr className="m-9 bg-primary border-primary  "></hr>
+
 				<Services />
-				<hr className="m-9 border-1 border-black" />
+
 				<About />
-				<hr className="m-9 border-black " />
+
 				<Contact />
-				<hr className="mt-9 mx-9 bg-primary rounded-3xl  "></hr>
+
 				<Footer />
 			</div>
 		</div>

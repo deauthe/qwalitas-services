@@ -2,24 +2,27 @@ import React from "react";
 
 const Hero = () => {
 	return (
-		<div className="flex-col sm:flex-row border-rose-400 border-2 ">
+		<div className="flex-col sm:flex-row  ">
 			<div className="">
 				<div className="">
-					<h1 className="font-custom uppercase text-center text-8xl text-primary font-extrabold">
+					<h1 className="font-custom uppercase text-center text-8xl text-primary font-extrabold m-8">
 						Securing Truth
 					</h1>
 				</div>
 				<div className="">
-					<h2 className="text-3xl uppercase md:text-5xl text-center md:text-center text-secondary font-mono font-extrabold">
+					<h2 className="text-3xl uppercase md:text-5xl text-center md:text-center text-accent font-mono font-extrabold mt-8">
 						Empowering You with Answers
 					</h2>
-					<h2 className="text-3xl uppercase  md:text-5xl text-center md:text-center text-secondary font-mono font-extrabold">
+					<h2 className="text-3xl uppercase  md:text-5xl text-center md:text-center text-accent font-mono font-extrabold mb-8">
 						One Clue at a Time
 					</h2>
 				</div>
 				<div className="">
-					<h3 className="text-xl md:text-3xl text-primary text-center font-mono font-extrabold">
-						Contact Us Today for Professional and Confidential Investigations
+					<h3 className="text-xl uppercase md:text-3xl text-gray-600 text-center font-mono font-extrabold">
+						Contact Us Today
+					</h3>
+					<h3 className="text-xl uppercase md:text-3xl text-gray-600 text-center font-mono font-extrabold">
+						for Professional and Confidential Investigations
 					</h3>
 				</div>
 			</div>

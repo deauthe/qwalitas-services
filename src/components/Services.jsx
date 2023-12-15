@@ -4,9 +4,9 @@ import Card from "./Card";
 
 const Services = () => {
 	return (
-		<div className=" text-center">
-			<div className="p-4 m-10 flex-row items-center justify-between">
-				<div className="text-center font-[650] text-5xl md:text-8xl text-primary ">
+		<div className=" text-center ">
+			<div className="sm:p-4 sm:m-10 w-full flex-row items-center  justify-between">
+				<div className="text-5xl md:text-9xl md:mx-10 mx-4 whitespace-pre-line text-center text-gray-300 font-extrabold ">
 					SERVICES
 				</div>
 			</div>

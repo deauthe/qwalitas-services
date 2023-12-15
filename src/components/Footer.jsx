@@ -4,8 +4,8 @@ import socialLinks from "../constants/socialLinks";
 import { PiDetectiveFill } from "react-icons/pi";
 const Footer = () => {
 	return (
-		<div>
-			<div className=" p-10 flex items-center justify-between bg-black">
+		<div className="bg-[url('bgImg.jpg')] border-t-4 border-b-4 border-zinc-900 mt-20 rounded-md">
+			<div className=" p-10 flex items-center justify-between ">
 				<div className="flex-col">
 					{navBarLinks.map((item, index) => (
 						<div
@@ -28,7 +28,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="flex-col justify-start  p-6">
-					<div className=" flex items-center justify-between hover:font-extrabold text-white p-2 hover:cursor-pointer">
+					<div className=" text-center hover:font-extrabold text-white p-2 hover:cursor-pointer">
 						socials
 					</div>
 					{socialLinks.map((item, index) => (
@@ -44,8 +44,8 @@ const Footer = () => {
 					))}
 				</div>
 			</div>
-			<hr className="mb-5 bg-primary rounded-3xl  "></hr>
-			<div className="  hover:font-extrabold text-white hover:bg-primary hover:text-gray-800 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2">
+			<hr className="mb-5 border-zinc-800 rounded-3xl  "></hr>
+			<div className="  hover:font-extrabold text-white duration-300 shadow-lg p-2">
 				copyright@2023
 			</div>
 		</div>

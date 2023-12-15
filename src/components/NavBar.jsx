@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import services from "../constants/services";
 import navBarLinks from "../constants/navLinks";
 import { IoMdMenu } from "react-icons/io";
+import { PiDetectiveFill } from "react-icons/pi";
 
 const NavBar = () => {
 	const [isMenuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const NavBar = () => {
 	return (
 		<nav className=" bg-black h-[120px] md:h-[170px] ">
 			<div className="flex md:flex-row w-screen justify-between items-center">
-				<div className="text-white font-bold text-lg mr-10">
+				<div className="text-gray-300 font-bold text-lg mr-10">
 					<img
 						src="/logoInv.png"
 						alt="qwalitas services"
@@ -30,29 +31,38 @@ const NavBar = () => {
 				{/* Navbar links */}
 				<div className=" hidden md:flex space-x-10">
 					{navBarLinks.map((item, index) => (
-						<div className=" text-xl   hover:font-extrabold text-primary hover:bg-primary hover:text-gray-800 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2">
-							<a key={index} href={item.href} className="whitespace-nowrap">
+						<div
+							key={index}
+							className=" flex items-center px-2 justify-between hover:font-bold text-gray-300 hover:bg-zinc-900 hover:text-gray-100 duration-200 rounded-2xl shadow-lg hover:rounded-md p-2 hover:cursor-pointer"
+						>
+							<a
+								key={index}
+								href={item.href}
+								className="  text-lg uppercase text-left"
+							>
 								{item.name}
 							</a>
+							<div className="ml-2">{item.icon}</div>
 						</div>
 					))}
 
 					{/* Dropdown */}
-					<div className="relative inline-block text-primary">
+					<div className="relative inline-block text-gray-300">
 						<button
-							className="rounded-2xl text-xl  hover:font-extrabold text-primary hover:bg-primary hover:text-gray-800  mx-8 duration-200 shadow-lg hover:rounded-md  p-2"
+							className="rounded-2xl flex items-center justify-between gap-2  text-lg uppercase text-left  hover:font-extrabold text-gray-300 hover:bg-zinc-900 hover:text-gray-100 mr-4 duration-200 shadow-lg hover:rounded-md  p-2"
 							onClick={handleDropDown}
 						>
 							services
+							<PiDetectiveFill />
 						</button>
 						{isDropDownOpen && (
-							<div className="absolute bg-black rounded-xl  border-3 text-primary pt-1">
+							<div className="absolute bg-black rounded-xl  border-3 text-gray-300 pt-1">
 								<ul className="">
 									{services.map((item, index) => (
 										<li key={index}>
 											<a
 												href={item.href}
-												className="hover:bg-primary duration-200 hover:text-gray-800 rounded-b-3xl py-2 px-4 block whitespace-no-wrap"
+												className="hover:bg-zinc-900 duration-200 hover:text-gray-100 rounded-b-3xl py-2 px-4 block whitespace-no-wrap"
 											>
 												{item.name}
 											</a>
@@ -67,7 +77,7 @@ const NavBar = () => {
 				{/* Mobile menu button */}
 				<div className="md:hidden">
 					<button
-						className="m-8 h-auto scale-150 md:scale-150 text-white"
+						className="m-8 h-auto scale-150 md:scale-150 text-gray-300"
 						onClick={toggleMenu}
 					>
 						<IoMdMenu />
@@ -81,17 +91,17 @@ const NavBar = () => {
 					{navBarLinks.map((item, index) => (
 						<div
 							key={index}
-							className="  hover:font-extrabold text-primary hover:bg-primary hover:text-gray-800 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2"
+							className="  hover:font-extrabold text-gray-300 hover:bg-zinc-900 hover:text-gray-100 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2"
 						>
 							<a href={item.href}>{item.name}</a>
 						</div>
 					))}
 
 					{/* Dropdown */}
-					<div className="relative inline-block text-primary">
+					<div className="relative inline-block text-gray-300">
 						<a href="/services">
 							<button
-								className="hover:font-extrabold text-primary hover:bg-primary hover:text-gray-800 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2"
+								className="hover:font-extrabold text-gray-300 hover:bg-zinc-900 hover:text-gray-100 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2"
 								onClick={handleDropDown}
 							>
 								services
