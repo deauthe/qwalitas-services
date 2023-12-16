@@ -1,10 +1,11 @@
 import React from "react";
 import navBarLinks from "../constants/navLinks";
 import socialLinks from "../constants/socialLinks";
+import contacts from "../constants/contact";
 import { PiDetectiveFill } from "react-icons/pi";
 const Footer = () => {
 	return (
-		<div className="bg-[url('bgImg.jpg')] border-t-4 border-b-4 border-zinc-900 mt-20 rounded-md">
+		<div className="bg-[url('bgImg.jpg')] border-t-4 md:border-4 border-zinc-900 mt-20 rounded-md md:m-10">
 			<div className=" p-10 flex items-center justify-between ">
 				<div className="flex-col">
 					{navBarLinks.map((item, index) => (
@@ -27,6 +28,7 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
+
 				<div className="flex-col justify-start  p-6">
 					<div className=" text-center hover:font-extrabold text-white p-2 hover:cursor-pointer">
 						socials
@@ -44,10 +46,10 @@ const Footer = () => {
 					))}
 				</div>
 			</div>
-			<hr className="mb-5 border-zinc-800 rounded-3xl  "></hr>
+			{/* <hr className="mb-5 border-zinc-800 rounded-3xl  "></hr>
 			<div className="  hover:font-extrabold text-white duration-300 shadow-lg p-2">
 				copyright@2023
-			</div>
+			</div> */}
 		</div>
 	);
 };

@@ -5,13 +5,14 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { NavHashLink } from "react-router-hash-link";
 
 function App() {
 	return (
-		<div className="flex-col min-h-screen bg-zinc-900 overflow-hidden ">
+		<div className=" min-h-screen bg-black overflow-hidden ">
 			<NavBar />
-			<hr className="mx-9 border-zinc-900 "></hr>
-			<div className=" bg-black min-h-screen p-8 ">
+
+			<div className=" bg-black min-h-screen p-2 ">
 				<div className="my-9">
 					<Hero />
 				</div>

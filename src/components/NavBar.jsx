@@ -18,11 +18,11 @@ const NavBar = () => {
 		console.log(isDropDownOpen);
 	};
 	return (
-		<nav className=" bg-black h-[120px] md:h-[170px] ">
-			<div className="flex md:flex-row w-screen justify-between items-center">
-				<div className="text-gray-300 font-bold text-lg mr-10">
+		<nav className=" bg-[url('bgImg3.jpg')] h-[120px] md:h-[170px] rounded-xl border-zinc-900 border-b-2 md:border-2 md:m-10">
+			<div className="flex md:flex-row w-screen justify-around items-center">
+				<div className="text-gray-500 font-bold text-lg mr-10">
 					<img
-						src="/logoInv.png"
+						src="/logo.png"
 						alt="qwalitas services"
 						className="h-[150px] md:h-[200px] "
 					/>
@@ -33,7 +33,7 @@ const NavBar = () => {
 					{navBarLinks.map((item, index) => (
 						<div
 							key={index}
-							className=" flex items-center px-2 justify-between hover:font-bold text-gray-300 hover:bg-zinc-900 hover:text-gray-100 duration-200 rounded-2xl shadow-lg hover:rounded-md p-2 hover:cursor-pointer"
+							className=" flex items-center px-2 justify-between hover:font-bold text-gray-500 hover:bg-zinc-900 hover:text-gray-100 duration-200 rounded-2xl shadow-lg hover:rounded-md p-2 hover:cursor-pointer"
 						>
 							<a
 								key={index}
@@ -47,16 +47,16 @@ const NavBar = () => {
 					))}
 
 					{/* Dropdown */}
-					<div className="relative inline-block text-gray-300">
+					<div className="relative inline-block text-gray-500">
 						<button
-							className="rounded-2xl flex items-center justify-between gap-2  text-lg uppercase text-left  hover:font-extrabold text-gray-300 hover:bg-zinc-900 hover:text-gray-100 mr-4 duration-200 shadow-lg hover:rounded-md  p-2"
+							className="rounded-2xl flex items-center justify-between gap-2  text-lg uppercase text-left  hover:font-extrabold text-gray-500 hover:bg-zinc-900 hover:text-gray-100 mr-4 duration-200 shadow-lg hover:rounded-md  p-2"
 							onClick={handleDropDown}
 						>
 							services
 							<PiDetectiveFill />
 						</button>
 						{isDropDownOpen && (
-							<div className="absolute bg-black rounded-xl  border-3 text-gray-300 pt-1">
+							<div className="absolute bg-black rounded-xl  border-3 text-gray-500 pt-1">
 								<ul className="">
 									{services.map((item, index) => (
 										<li key={index}>
@@ -77,7 +77,7 @@ const NavBar = () => {
 				{/* Mobile menu button */}
 				<div className="md:hidden">
 					<button
-						className="m-8 h-auto scale-150 md:scale-150 text-gray-300"
+						className="m-8 h-auto scale-150 md:scale-150 text-gray-500"
 						onClick={toggleMenu}
 					>
 						<IoMdMenu />
@@ -91,17 +91,17 @@ const NavBar = () => {
 					{navBarLinks.map((item, index) => (
 						<div
 							key={index}
-							className="  hover:font-extrabold text-gray-300 hover:bg-zinc-900 hover:text-gray-100 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2"
+							className="  hover:font-extrabold text-gray-500 hover:bg-zinc-900 hover:text-gray-100 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2"
 						>
 							<a href={item.href}>{item.name}</a>
 						</div>
 					))}
 
 					{/* Dropdown */}
-					<div className="relative inline-block text-gray-300">
+					<div className="relative inline-block text-gray-500">
 						<a href="/services">
 							<button
-								className="hover:font-extrabold text-gray-300 hover:bg-zinc-900 hover:text-gray-100 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2"
+								className="hover:font-extrabold text-gray-500 hover:bg-zinc-900 hover:text-gray-100 duration-200 rounded-2xl shadow-lg hover:rounded-md  p-2"
 								onClick={handleDropDown}
 							>
 								services

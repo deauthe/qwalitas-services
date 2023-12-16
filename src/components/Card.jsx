@@ -3,7 +3,10 @@ import React from "react";
 const Card = (props) => {
 	const service = props.service;
 	return (
-		<div className="flex-col border-zinc-900 border-[1px] items-center flex-wrap justify-between gap-4 rounded-xl shadow-md bg-[url('Image.png')] ">
+		<div
+			className="flex-col border-zinc-900 border-[1px] items-center flex-wrap justify-between gap-4 rounded-xl shadow-md bg-[url('Image.png')] "
+			id={service.href}
+		>
 			<h1 className="text-xl text-highlight font-bold uppercase m-2">
 				{service.name}
 			</h1>
