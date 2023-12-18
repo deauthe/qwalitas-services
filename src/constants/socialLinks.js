@@ -11,7 +11,7 @@ const socialLinks = [
 	{
 		name: "FaceBook",
 		icon: <FaMeta />,
-		href: "/",
+		href: "https://www.facebook.com/qwalitasservices",
 	},
 	{
 		name: "Company",

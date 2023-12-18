@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Services = () => {
 	return (
-		<div className=" text-center ">
+		<div className=" text-center sm:p-40">
 			<div className="sm:p-4 sm:m-10 w-full flex-row items-center  justify-between">
 				<div className="text-5xl md:text-9xl md:mx-10 mx-4 whitespace-pre-line text-center text-gray-300 font-extrabold ">
 					SERVICES
