@@ -19,12 +19,12 @@ const Card = (props) => {
 			</div>
 
 			<div className="relative mt-auto bottom-0">
-				<button
+				{/* <button
 					href="/contact"
 					className="text-gray-500 mt-auto mx-2 border-gray-700 duration-200 border-2 px-2 rounded-xl hover:rounded-lg hover:bg-gray-700 text-bold relative top-0 right-0"
 				>
 					Contact
-				</button>
+				</button> */}
 			</div>
 		</div>
 	);

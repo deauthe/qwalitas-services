@@ -7,3 +7,14 @@
 :root {
 	font-family: font-custom;
 }
+
+html::-webkit-scrollbar {
+	width: 1vw;
+	background-color: #000;
+}
+html::-webkit-scrollbar-track {
+	background-color: #000;
+}
+html::-webkit-scrollbar-thumb {
+	color: "primary";
+}

@@ -11,9 +11,9 @@ const Footer = () => {
 					{navBarLinks.map((item, index) => (
 						<div
 							key={index}
-							className=" flex items-center px-2 justify-between hover:font-extrabold text-white hover:bg-primary hover:text-gray-800 duration-200 rounded-2xl shadow-lg hover:rounded-md p-2 hover:cursor-pointer"
+							className=" flex justify-between hover:font-extrabold text-white hover:bg-primary hover:text-gray-800 duration-200 rounded-2xl shadow-lg hover:rounded-md py-2 pr-2 hover:cursor-pointer"
 						>
-							<a key={index} href={item.href} className="ml-4 text-left">
+							<a key={index} href={item.href} className="ml-2 text-left">
 								{item.name}
 							</a>
 							<div className="ml-2">{item.icon}</div>
