@@ -1,7 +1,7 @@
 import React from "react";
 import navBarLinks from "../constants/navLinks";
 import socialLinks from "../constants/socialLinks";
-import contacts from "../constants/contact";
+
 import { PiDetectiveFill } from "react-icons/pi";
 const Footer = () => {
 	return (
