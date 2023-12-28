@@ -30,9 +30,6 @@ const Footer = () => {
 				</div>
 
 				<div className="flex-col justify-start  p-6">
-					<div className=" text-center hover:font-extrabold text-white p-2 hover:cursor-pointer">
-						socials
-					</div>
 					{socialLinks.map((item, index) => (
 						<div
 							key={index}
