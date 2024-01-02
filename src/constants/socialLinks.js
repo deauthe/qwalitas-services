@@ -6,7 +6,7 @@ const socialLinks = [
 	{
 		name: "Instagram",
 		icon: <FaInstagram />,
-		href: "/",
+		href: "https://www.instagram.com/qds_786/",
 	},
 	{
 		name: "FaceBook",
